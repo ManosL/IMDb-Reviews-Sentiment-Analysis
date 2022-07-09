@@ -1,0 +1,25 @@
+Manual
+
+In order to run the experiments you should follow these steps:
+
+0. Create and activate a virtual environment and then run the command
+pip3 install -r requirements.txt in order to install the necessary
+libraries in order to run the code
+
+1. Unzip the imdb.zip. In this file there is contained the
+IMDb reviews dataset.
+
+2. For Machine Learning Experiments run the ./code/ml_approach.py
+using Python3.
+
+3. For LSTM experiments you can either run the ./code/lstm_experiments.sh
+script that runs the Grid Search I present on this report or the
+./code/lstm_approach.py script in order to run a single experiment. You can
+add the parameter -h in order to get the usage of that file.
+
+4. For BERT experiments you can either run the ./code/bert_experiments.sh
+script that runs the Grid Search I present on this report or the
+./code/bert_approach.py script in order to run a single experiment. You can
+add the parameter -h in order to get the usage of that file.
+
+5. In the ./code/{bert|lstm}_logs directories contain the output of each experiment.

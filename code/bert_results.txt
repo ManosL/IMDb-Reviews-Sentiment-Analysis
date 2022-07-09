@@ -1,0 +1,979 @@
+
+./bert_logs/max_tokens=64_batch_size=8_pretrained_model=bert-small.log results
+Accuracy on Train Set: 0.85292
+F1 on Train Set: 0.8510190024715368
+Accuracy on Test Set: 0.7842666666666667
+F1 on Test Set: 0.7808657023674088
+
+./bert_logs/max_tokens=128_batch_size=8_pretrained_model=bert-small.log results
+Accuracy on Train Set: 0.88996
+F1 on Train Set: 0.8925012699777265
+Accuracy on Test Set: 0.8402666666666667
+F1 on Test Set: 0.8441970556104667
+
+./bert_logs/max_tokens=256_batch_size=8_pretrained_model=bert-small.log results
+Accuracy on Train Set: 0.92012
+F1 on Train Set: 0.9202189285286244
+Accuracy on Test Set: 0.8845333333333333
+F1 on Test Set: 0.8848465507153875
+
+./bert_logs/max_tokens=512_batch_size=8_pretrained_model=bert-small.log results
+Accuracy on Train Set: 0.91636
+F1 on Train Set: 0.9204428718182855
+Accuracy on Test Set: 0.8903466666666666
+F1 on Test Set: 0.8970249424020836
+
+./bert_logs/max_tokens=64_batch_size=16_pretrained_model=bert-small.log results
+Accuracy on Train Set: 0.8348
+F1 on Train Set: 0.8305154300722258
+Accuracy on Test Set: 0.7829866666666667
+F1 on Test Set: 0.7752057897353738
+
+./bert_logs/max_tokens=128_batch_size=16_pretrained_model=bert-small.log results
+Accuracy on Train Set: 0.88164
+F1 on Train Set: 0.8826305977549481
+Accuracy on Test Set: 0.8429866666666667
+F1 on Test Set: 0.8447093575271652
+
+./bert_logs/max_tokens=256_batch_size=16_pretrained_model=bert-small.log results
+Accuracy on Train Set: 0.90788
+F1 on Train Set: 0.9049643048735196
+Accuracy on Test Set: 0.8766933333333333
+F1 on Test Set: 0.871982281284607
+Traceback (most recent call last):
+  File "bert_approach.py", line 336, in <module>
+    main()
+  File "bert_approach.py", line 297, in main
+    wrapper.fit(train_instances, train_labels, val_instances, val_labels)
+  File "bert_approach.py", line 150, in fit
+    loss.backward()
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/_tensor.py", line 307, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/autograd/__init__.py", line 156, in backward
+    allow_unreachable=True, accumulate_grad=True)  # allow_unreachable flag
+RuntimeError: CUDA out of memory. Tried to allocate 64.00 MiB (GPU 0; 5.93 GiB total capacity; 4.50 GiB already allocated; 36.56 MiB free; 4.72 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+
+./bert_logs/max_tokens=512_batch_size=16_pretrained_model=bert-small.log results
+
+./bert_logs/max_tokens=64_batch_size=32_pretrained_model=bert-small.log results
+Accuracy on Train Set: 0.81892
+F1 on Train Set: 0.8249352256467768
+Accuracy on Test Set: 0.7832
+F1 on Test Set: 0.7910562837316885
+
+./bert_logs/max_tokens=128_batch_size=32_pretrained_model=bert-small.log results
+Accuracy on Train Set: 0.8686
+F1 on Train Set: 0.8701324372405614
+Accuracy on Test Set: 0.8332266666666667
+F1 on Test Set: 0.8359821662732757
+
+./bert_logs/max_tokens=256_batch_size=32_pretrained_model=bert-small.log results
+Accuracy on Train Set: 0.90496
+F1 on Train Set: 0.9051042415528396
+Accuracy on Test Set: 0.87616
+F1 on Test Set: 0.8764893617021277
+Traceback (most recent call last):
+  File "bert_approach.py", line 336, in <module>
+    main()
+  File "bert_approach.py", line 297, in main
+    wrapper.fit(train_instances, train_labels, val_instances, val_labels)
+  File "bert_approach.py", line 150, in fit
+    loss.backward()
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/_tensor.py", line 307, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/autograd/__init__.py", line 156, in backward
+    allow_unreachable=True, accumulate_grad=True)  # allow_unreachable flag
+RuntimeError: CUDA out of memory. Tried to allocate 128.00 MiB (GPU 0; 5.93 GiB total capacity; 4.47 GiB already allocated; 149.81 MiB free; 4.61 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+
+./bert_logs/max_tokens=512_batch_size=32_pretrained_model=bert-small.log results
+
+./bert_logs/max_tokens=64_batch_size=64_pretrained_model=bert-small.log results
+Accuracy on Train Set: 0.79932
+F1 on Train Set: 0.7922481262164064
+Accuracy on Test Set: 0.7708266666666667
+F1 on Test Set: 0.7619522464129411
+
+./bert_logs/max_tokens=128_batch_size=64_pretrained_model=bert-small.log results
+Accuracy on Train Set: 0.85252
+F1 on Train Set: 0.8527026487155925
+Accuracy on Test Set: 0.8333333333333334
+F1 on Test Set: 0.8333066623993173
+Traceback (most recent call last):
+  File "bert_approach.py", line 336, in <module>
+    main()
+  File "bert_approach.py", line 297, in main
+    wrapper.fit(train_instances, train_labels, val_instances, val_labels)
+  File "bert_approach.py", line 179, in fit
+    labels=labels)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 1554, in forward
+    return_dict=return_dict,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 1006, in forward
+    return_dict=return_dict,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 592, in forward
+    output_attentions,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 477, in forward
+    past_key_value=self_attn_past_key_value,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 409, in forward
+    output_attentions,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 324, in forward
+    attention_scores = attention_scores / math.sqrt(self.attention_head_size)
+RuntimeError: CUDA out of memory. Tried to allocate 128.00 MiB (GPU 0; 5.93 GiB total capacity; 4.59 GiB already allocated; 148.56 MiB free; 4.61 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+
+./bert_logs/max_tokens=256_batch_size=64_pretrained_model=bert-small.log results
+Traceback (most recent call last):
+  File "bert_approach.py", line 336, in <module>
+    main()
+  File "bert_approach.py", line 297, in main
+    wrapper.fit(train_instances, train_labels, val_instances, val_labels)
+  File "bert_approach.py", line 145, in fit
+    labels=labels)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 1554, in forward
+    return_dict=return_dict,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 1006, in forward
+    return_dict=return_dict,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 592, in forward
+    output_attentions,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 477, in forward
+    past_key_value=self_attn_past_key_value,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 409, in forward
+    output_attentions,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 306, in forward
+    attention_scores = torch.matmul(query_layer, key_layer.transpose(-1, -2))
+RuntimeError: CUDA out of memory. Tried to allocate 512.00 MiB (GPU 0; 5.93 GiB total capacity; 4.55 GiB already allocated; 212.56 MiB free; 4.55 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+
+./bert_logs/max_tokens=512_batch_size=64_pretrained_model=bert-small.log results
+
+./bert_logs/max_tokens=64_batch_size=8_pretrained_model=bert-medium.log results
+Accuracy on Train Set: 0.87048
+F1 on Train Set: 0.8711089881378871
+Accuracy on Test Set: 0.7975466666666666
+F1 on Test Set: 0.7979776476849388
+
+./bert_logs/max_tokens=128_batch_size=8_pretrained_model=bert-medium.log results
+Accuracy on Train Set: 0.90332
+F1 on Train Set: 0.905773654048575
+Accuracy on Test Set: 0.8531733333333333
+F1 on Test Set: 0.8583337621571553
+
+./bert_logs/max_tokens=256_batch_size=8_pretrained_model=bert-medium.log results
+Accuracy on Train Set: 0.935
+F1 on Train Set: 0.9350960578344052
+Accuracy on Test Set: 0.89536
+F1 on Test Set: 0.8961355214399153
+Traceback (most recent call last):
+  File "bert_approach.py", line 336, in <module>
+    main()
+  File "bert_approach.py", line 297, in main
+    wrapper.fit(train_instances, train_labels, val_instances, val_labels)
+  File "bert_approach.py", line 179, in fit
+    labels=labels)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 1554, in forward
+    return_dict=return_dict,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 1006, in forward
+    return_dict=return_dict,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 592, in forward
+    output_attentions,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 477, in forward
+    past_key_value=self_attn_past_key_value,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 409, in forward
+    output_attentions,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 324, in forward
+    attention_scores = attention_scores / math.sqrt(self.attention_head_size)
+RuntimeError: CUDA out of memory. Tried to allocate 64.00 MiB (GPU 0; 5.93 GiB total capacity; 4.50 GiB already allocated; 80.31 MiB free; 4.68 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+
+./bert_logs/max_tokens=512_batch_size=8_pretrained_model=bert-medium.log results
+
+./bert_logs/max_tokens=64_batch_size=16_pretrained_model=bert-medium.log results
+Accuracy on Train Set: 0.85688
+F1 on Train Set: 0.8559465335373218
+Accuracy on Test Set: 0.7984
+F1 on Test Set: 0.7961165048543689
+
+./bert_logs/max_tokens=128_batch_size=16_pretrained_model=bert-medium.log results
+Accuracy on Train Set: 0.89956
+F1 on Train Set: 0.9013940702925585
+Accuracy on Test Set: 0.8495466666666667
+F1 on Test Set: 0.8529733673841665
+
+./bert_logs/max_tokens=256_batch_size=16_pretrained_model=bert-medium.log results
+Accuracy on Train Set: 0.91416
+F1 on Train Set: 0.9179349904397706
+Accuracy on Test Set: 0.87936
+F1 on Test Set: 0.8865255342630681
+Traceback (most recent call last):
+  File "bert_approach.py", line 336, in <module>
+    main()
+  File "bert_approach.py", line 297, in main
+    wrapper.fit(train_instances, train_labels, val_instances, val_labels)
+  File "bert_approach.py", line 145, in fit
+    labels=labels)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 1554, in forward
+    return_dict=return_dict,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 1006, in forward
+    return_dict=return_dict,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 592, in forward
+    output_attentions,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 514, in forward
+    self.feed_forward_chunk, self.chunk_size_feed_forward, self.seq_len_dim, attention_output
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/modeling_utils.py", line 2472, in apply_chunking_to_forward
+    return forward_fn(*input_tensors)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 526, in feed_forward_chunk
+    layer_output = self.output(intermediate_output, attention_output)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 441, in forward
+    hidden_states = self.LayerNorm(hidden_states + input_tensor)
+RuntimeError: CUDA out of memory. Tried to allocate 16.00 MiB (GPU 0; 5.93 GiB total capacity; 4.63 GiB already allocated; 25.31 MiB free; 4.65 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+
+./bert_logs/max_tokens=512_batch_size=16_pretrained_model=bert-medium.log results
+
+./bert_logs/max_tokens=64_batch_size=32_pretrained_model=bert-medium.log results
+Accuracy on Train Set: 0.83876
+F1 on Train Set: 0.84766259778542
+Accuracy on Test Set: 0.7925333333333333
+F1 on Test Set: 0.8046796545491063
+
+./bert_logs/max_tokens=128_batch_size=32_pretrained_model=bert-medium.log results
+Accuracy on Train Set: 0.87532
+F1 on Train Set: 0.8673447674171172
+Accuracy on Test Set: 0.83632
+F1 on Test Set: 0.8239343698009293
+Traceback (most recent call last):
+  File "bert_approach.py", line 336, in <module>
+    main()
+  File "bert_approach.py", line 297, in main
+    wrapper.fit(train_instances, train_labels, val_instances, val_labels)
+  File "bert_approach.py", line 179, in fit
+    labels=labels)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 1554, in forward
+    return_dict=return_dict,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 1006, in forward
+    return_dict=return_dict,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 592, in forward
+    output_attentions,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 514, in forward
+    self.feed_forward_chunk, self.chunk_size_feed_forward, self.seq_len_dim, attention_output
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/modeling_utils.py", line 2472, in apply_chunking_to_forward
+    return forward_fn(*input_tensors)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 526, in feed_forward_chunk
+    layer_output = self.output(intermediate_output, attention_output)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 441, in forward
+    hidden_states = self.LayerNorm(hidden_states + input_tensor)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/normalization.py", line 190, in forward
+    input, self.normalized_shape, self.weight, self.bias, self.eps)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/functional.py", line 2347, in layer_norm
+    return torch.layer_norm(input, normalized_shape, weight, bias, eps, torch.backends.cudnn.enabled)
+RuntimeError: CUDA out of memory. Tried to allocate 16.00 MiB (GPU 0; 5.93 GiB total capacity; 4.43 GiB already allocated; 24.12 MiB free; 4.45 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+
+./bert_logs/max_tokens=256_batch_size=32_pretrained_model=bert-medium.log results
+Traceback (most recent call last):
+  File "bert_approach.py", line 336, in <module>
+    main()
+  File "bert_approach.py", line 297, in main
+    wrapper.fit(train_instances, train_labels, val_instances, val_labels)
+  File "bert_approach.py", line 145, in fit
+    labels=labels)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 1554, in forward
+    return_dict=return_dict,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 1006, in forward
+    return_dict=return_dict,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 592, in forward
+    output_attentions,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 477, in forward
+    past_key_value=self_attn_past_key_value,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 409, in forward
+    output_attentions,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 306, in forward
+    attention_scores = torch.matmul(query_layer, key_layer.transpose(-1, -2))
+RuntimeError: CUDA out of memory. Tried to allocate 256.00 MiB (GPU 0; 5.93 GiB total capacity; 4.37 GiB already allocated; 89.19 MiB free; 4.39 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+
+./bert_logs/max_tokens=512_batch_size=32_pretrained_model=bert-medium.log results
+
+./bert_logs/max_tokens=64_batch_size=64_pretrained_model=bert-medium.log results
+Accuracy on Train Set: 0.82904
+F1 on Train Set: 0.8304102848980239
+Accuracy on Test Set: 0.7898666666666667
+F1 on Test Set: 0.7915123293470209
+Traceback (most recent call last):
+  File "bert_approach.py", line 336, in <module>
+    main()
+  File "bert_approach.py", line 297, in main
+    wrapper.fit(train_instances, train_labels, val_instances, val_labels)
+  File "bert_approach.py", line 179, in fit
+    labels=labels)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 1554, in forward
+    return_dict=return_dict,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 1006, in forward
+    return_dict=return_dict,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 592, in forward
+    output_attentions,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 514, in forward
+    self.feed_forward_chunk, self.chunk_size_feed_forward, self.seq_len_dim, attention_output
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/modeling_utils.py", line 2472, in apply_chunking_to_forward
+    return forward_fn(*input_tensors)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 526, in feed_forward_chunk
+    layer_output = self.output(intermediate_output, attention_output)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 439, in forward
+    hidden_states = self.dense(hidden_states)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/linear.py", line 103, in forward
+    return F.linear(input, self.weight, self.bias)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/functional.py", line 1848, in linear
+    return torch._C._nn.linear(input, weight, bias)
+RuntimeError: CUDA out of memory. Tried to allocate 16.00 MiB (GPU 0; 5.93 GiB total capacity; 4.71 GiB already allocated; 28.81 MiB free; 4.73 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+
+./bert_logs/max_tokens=128_batch_size=64_pretrained_model=bert-medium.log results
+Traceback (most recent call last):
+  File "bert_approach.py", line 336, in <module>
+    main()
+  File "bert_approach.py", line 297, in main
+    wrapper.fit(train_instances, train_labels, val_instances, val_labels)
+  File "bert_approach.py", line 145, in fit
+    labels=labels)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 1554, in forward
+    return_dict=return_dict,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 1006, in forward
+    return_dict=return_dict,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 592, in forward
+    output_attentions,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 514, in forward
+    self.feed_forward_chunk, self.chunk_size_feed_forward, self.seq_len_dim, attention_output
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/modeling_utils.py", line 2472, in apply_chunking_to_forward
+    return forward_fn(*input_tensors)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 526, in feed_forward_chunk
+    layer_output = self.output(intermediate_output, attention_output)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 441, in forward
+    hidden_states = self.LayerNorm(hidden_states + input_tensor)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/normalization.py", line 190, in forward
+    input, self.normalized_shape, self.weight, self.bias, self.eps)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/functional.py", line 2347, in layer_norm
+    return torch.layer_norm(input, normalized_shape, weight, bias, eps, torch.backends.cudnn.enabled)
+RuntimeError: CUDA out of memory. Tried to allocate 32.00 MiB (GPU 0; 5.93 GiB total capacity; 4.72 GiB already allocated; 26.06 MiB free; 4.74 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+
+./bert_logs/max_tokens=256_batch_size=64_pretrained_model=bert-medium.log results
+Traceback (most recent call last):
+  File "bert_approach.py", line 336, in <module>
+    main()
+  File "bert_approach.py", line 297, in main
+    wrapper.fit(train_instances, train_labels, val_instances, val_labels)
+  File "bert_approach.py", line 145, in fit
+    labels=labels)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 1554, in forward
+    return_dict=return_dict,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 1006, in forward
+    return_dict=return_dict,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 592, in forward
+    output_attentions,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 477, in forward
+    past_key_value=self_attn_past_key_value,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 409, in forward
+    output_attentions,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 306, in forward
+    attention_scores = torch.matmul(query_layer, key_layer.transpose(-1, -2))
+RuntimeError: CUDA out of memory. Tried to allocate 512.00 MiB (GPU 0; 5.93 GiB total capacity; 4.59 GiB already allocated; 154.81 MiB free; 4.61 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+
+./bert_logs/max_tokens=512_batch_size=64_pretrained_model=bert-medium.log results
+
+./bert_logs/max_tokens=64_batch_size=8_pretrained_model=bert-base-uncased.log results
+Accuracy on Train Set: 0.90252
+F1 on Train Set: 0.904778650412222
+Accuracy on Test Set: 0.82544
+F1 on Test Set: 0.8321107976404207
+
+./bert_logs/max_tokens=128_batch_size=8_pretrained_model=bert-base-uncased.log results
+Accuracy on Train Set: 0.97664
+F1 on Train Set: 0.9764895330112723
+Accuracy on Test Set: 0.87712
+F1 on Test Set: 0.8730998017184403
+Traceback (most recent call last):
+  File "bert_approach.py", line 336, in <module>
+    main()
+  File "bert_approach.py", line 297, in main
+    wrapper.fit(train_instances, train_labels, val_instances, val_labels)
+  File "bert_approach.py", line 179, in fit
+    labels=labels)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 1554, in forward
+    return_dict=return_dict,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 1006, in forward
+    return_dict=return_dict,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 592, in forward
+    output_attentions,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 477, in forward
+    past_key_value=self_attn_past_key_value,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 409, in forward
+    output_attentions,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 340, in forward
+    context_layer = torch.matmul(attention_probs, value_layer)
+RuntimeError: CUDA out of memory. Tried to allocate 20.00 MiB (GPU 0; 5.93 GiB total capacity; 4.27 GiB already allocated; 17.25 MiB free; 4.45 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+
+./bert_logs/max_tokens=256_batch_size=8_pretrained_model=bert-base-uncased.log results
+Traceback (most recent call last):
+  File "bert_approach.py", line 336, in <module>
+    main()
+  File "bert_approach.py", line 297, in main
+    wrapper.fit(train_instances, train_labels, val_instances, val_labels)
+  File "bert_approach.py", line 145, in fit
+    labels=labels)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 1554, in forward
+    return_dict=return_dict,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 1006, in forward
+    return_dict=return_dict,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 592, in forward
+    output_attentions,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 477, in forward
+    past_key_value=self_attn_past_key_value,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 409, in forward
+    output_attentions,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 324, in forward
+    attention_scores = attention_scores / math.sqrt(self.attention_head_size)
+RuntimeError: CUDA out of memory. Tried to allocate 96.00 MiB (GPU 0; 5.93 GiB total capacity; 4.34 GiB already allocated; 102.06 MiB free; 4.38 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+
+./bert_logs/max_tokens=512_batch_size=8_pretrained_model=bert-base-uncased.log results
+
+./bert_logs/max_tokens=64_batch_size=16_pretrained_model=bert-base-uncased.log results
+Accuracy on Train Set: 0.90008
+F1 on Train Set: 0.9032532920216887
+Accuracy on Test Set: 0.8298666666666666
+F1 on Test Set: 0.8364102564102563
+Traceback (most recent call last):
+  File "bert_approach.py", line 336, in <module>
+    main()
+  File "bert_approach.py", line 297, in main
+    wrapper.fit(train_instances, train_labels, val_instances, val_labels)
+  File "bert_approach.py", line 179, in fit
+    labels=labels)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 1554, in forward
+    return_dict=return_dict,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 1006, in forward
+    return_dict=return_dict,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 592, in forward
+    output_attentions,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 514, in forward
+    self.feed_forward_chunk, self.chunk_size_feed_forward, self.seq_len_dim, attention_output
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/modeling_utils.py", line 2472, in apply_chunking_to_forward
+    return forward_fn(*input_tensors)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 525, in feed_forward_chunk
+    intermediate_output = self.intermediate(attention_output)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 426, in forward
+    hidden_states = self.dense(hidden_states)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/linear.py", line 103, in forward
+    return F.linear(input, self.weight, self.bias)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/functional.py", line 1848, in linear
+    return torch._C._nn.linear(input, weight, bias)
+RuntimeError: CUDA out of memory. Tried to allocate 24.00 MiB (GPU 0; 5.93 GiB total capacity; 4.31 GiB already allocated; 23.94 MiB free; 4.54 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+
+./bert_logs/max_tokens=128_batch_size=16_pretrained_model=bert-base-uncased.log results
+Traceback (most recent call last):
+  File "bert_approach.py", line 336, in <module>
+    main()
+  File "bert_approach.py", line 297, in main
+    wrapper.fit(train_instances, train_labels, val_instances, val_labels)
+  File "bert_approach.py", line 145, in fit
+    labels=labels)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 1554, in forward
+    return_dict=return_dict,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 1006, in forward
+    return_dict=return_dict,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 592, in forward
+    output_attentions,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 514, in forward
+    self.feed_forward_chunk, self.chunk_size_feed_forward, self.seq_len_dim, attention_output
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/modeling_utils.py", line 2472, in apply_chunking_to_forward
+    return forward_fn(*input_tensors)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 525, in feed_forward_chunk
+    intermediate_output = self.intermediate(attention_output)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 427, in forward
+    hidden_states = self.intermediate_act_fn(hidden_states)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/activations.py", line 56, in forward
+    return self.act(input)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/functional.py", line 1556, in gelu
+    return torch._C._nn.gelu(input)
+RuntimeError: CUDA out of memory. Tried to allocate 48.00 MiB (GPU 0; 5.93 GiB total capacity; 4.46 GiB already allocated; 48.69 MiB free; 4.52 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+
+./bert_logs/max_tokens=256_batch_size=16_pretrained_model=bert-base-uncased.log results
+Traceback (most recent call last):
+  File "bert_approach.py", line 336, in <module>
+    main()
+  File "bert_approach.py", line 297, in main
+    wrapper.fit(train_instances, train_labels, val_instances, val_labels)
+  File "bert_approach.py", line 145, in fit
+    labels=labels)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 1554, in forward
+    return_dict=return_dict,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 1006, in forward
+    return_dict=return_dict,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 592, in forward
+    output_attentions,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 477, in forward
+    past_key_value=self_attn_past_key_value,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 409, in forward
+    output_attentions,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 324, in forward
+    attention_scores = attention_scores / math.sqrt(self.attention_head_size)
+RuntimeError: CUDA out of memory. Tried to allocate 192.00 MiB (GPU 0; 5.93 GiB total capacity; 4.51 GiB already allocated; 205.44 MiB free; 4.56 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+
+./bert_logs/max_tokens=512_batch_size=16_pretrained_model=bert-base-uncased.log results
+Traceback (most recent call last):
+  File "bert_approach.py", line 336, in <module>
+    main()
+  File "bert_approach.py", line 297, in main
+    wrapper.fit(train_instances, train_labels, val_instances, val_labels)
+  File "bert_approach.py", line 179, in fit
+    labels=labels)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 1554, in forward
+    return_dict=return_dict,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 1006, in forward
+    return_dict=return_dict,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 592, in forward
+    output_attentions,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 514, in forward
+    self.feed_forward_chunk, self.chunk_size_feed_forward, self.seq_len_dim, attention_output
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/modeling_utils.py", line 2472, in apply_chunking_to_forward
+    return forward_fn(*input_tensors)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 525, in feed_forward_chunk
+    intermediate_output = self.intermediate(attention_output)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 427, in forward
+    hidden_states = self.intermediate_act_fn(hidden_states)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/activations.py", line 56, in forward
+    return self.act(input)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/functional.py", line 1556, in gelu
+    return torch._C._nn.gelu(input)
+RuntimeError: CUDA out of memory. Tried to allocate 24.00 MiB (GPU 0; 5.93 GiB total capacity; 4.26 GiB already allocated; 38.88 MiB free; 4.54 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+
+./bert_logs/max_tokens=64_batch_size=32_pretrained_model=bert-base-uncased.log results
+Traceback (most recent call last):
+  File "bert_approach.py", line 336, in <module>
+    main()
+  File "bert_approach.py", line 297, in main
+    wrapper.fit(train_instances, train_labels, val_instances, val_labels)
+  File "bert_approach.py", line 145, in fit
+    labels=labels)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 1554, in forward
+    return_dict=return_dict,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 1006, in forward
+    return_dict=return_dict,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 592, in forward
+    output_attentions,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 514, in forward
+    self.feed_forward_chunk, self.chunk_size_feed_forward, self.seq_len_dim, attention_output
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/modeling_utils.py", line 2472, in apply_chunking_to_forward
+    return forward_fn(*input_tensors)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 526, in feed_forward_chunk
+    layer_output = self.output(intermediate_output, attention_output)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 439, in forward
+    hidden_states = self.dense(hidden_states)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/linear.py", line 103, in forward
+    return F.linear(input, self.weight, self.bias)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/functional.py", line 1848, in linear
+    return torch._C._nn.linear(input, weight, bias)
+RuntimeError: CUDA out of memory. Tried to allocate 12.00 MiB (GPU 0; 5.93 GiB total capacity; 4.51 GiB already allocated; 25.56 MiB free; 4.56 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+
+./bert_logs/max_tokens=128_batch_size=32_pretrained_model=bert-base-uncased.log results
+Traceback (most recent call last):
+  File "bert_approach.py", line 336, in <module>
+    main()
+  File "bert_approach.py", line 297, in main
+    wrapper.fit(train_instances, train_labels, val_instances, val_labels)
+  File "bert_approach.py", line 145, in fit
+    labels=labels)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 1554, in forward
+    return_dict=return_dict,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 1006, in forward
+    return_dict=return_dict,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 592, in forward
+    output_attentions,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 477, in forward
+    past_key_value=self_attn_past_key_value,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 409, in forward
+    output_attentions,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 306, in forward
+    attention_scores = torch.matmul(query_layer, key_layer.transpose(-1, -2))
+RuntimeError: CUDA out of memory. Tried to allocate 96.00 MiB (GPU 0; 5.93 GiB total capacity; 4.51 GiB already allocated; 28.81 MiB free; 4.56 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+
+./bert_logs/max_tokens=256_batch_size=32_pretrained_model=bert-base-uncased.log results
+Traceback (most recent call last):
+  File "bert_approach.py", line 336, in <module>
+    main()
+  File "bert_approach.py", line 297, in main
+    wrapper.fit(train_instances, train_labels, val_instances, val_labels)
+  File "bert_approach.py", line 145, in fit
+    labels=labels)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 1554, in forward
+    return_dict=return_dict,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 1006, in forward
+    return_dict=return_dict,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 592, in forward
+    output_attentions,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 514, in forward
+    self.feed_forward_chunk, self.chunk_size_feed_forward, self.seq_len_dim, attention_output
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/modeling_utils.py", line 2472, in apply_chunking_to_forward
+    return forward_fn(*input_tensors)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 525, in feed_forward_chunk
+    intermediate_output = self.intermediate(attention_output)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 426, in forward
+    hidden_states = self.dense(hidden_states)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/linear.py", line 103, in forward
+    return F.linear(input, self.weight, self.bias)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/functional.py", line 1848, in linear
+    return torch._C._nn.linear(input, weight, bias)
+RuntimeError: CUDA out of memory. Tried to allocate 192.00 MiB (GPU 0; 5.93 GiB total capacity; 4.53 GiB already allocated; 192.56 MiB free; 4.59 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+
+./bert_logs/max_tokens=512_batch_size=32_pretrained_model=bert-base-uncased.log results
+Traceback (most recent call last):
+  File "bert_approach.py", line 336, in <module>
+    main()
+  File "bert_approach.py", line 297, in main
+    wrapper.fit(train_instances, train_labels, val_instances, val_labels)
+  File "bert_approach.py", line 179, in fit
+    labels=labels)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 1554, in forward
+    return_dict=return_dict,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 1006, in forward
+    return_dict=return_dict,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 592, in forward
+    output_attentions,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 514, in forward
+    self.feed_forward_chunk, self.chunk_size_feed_forward, self.seq_len_dim, attention_output
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/modeling_utils.py", line 2472, in apply_chunking_to_forward
+    return forward_fn(*input_tensors)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 526, in feed_forward_chunk
+    layer_output = self.output(intermediate_output, attention_output)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 441, in forward
+    hidden_states = self.LayerNorm(hidden_states + input_tensor)
+RuntimeError: CUDA out of memory. Tried to allocate 12.00 MiB (GPU 0; 5.93 GiB total capacity; 4.69 GiB already allocated; 23.06 MiB free; 4.73 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+
+./bert_logs/max_tokens=64_batch_size=64_pretrained_model=bert-base-uncased.log results
+Traceback (most recent call last):
+  File "bert_approach.py", line 336, in <module>
+    main()
+  File "bert_approach.py", line 297, in main
+    wrapper.fit(train_instances, train_labels, val_instances, val_labels)
+  File "bert_approach.py", line 145, in fit
+    labels=labels)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 1554, in forward
+    return_dict=return_dict,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 1006, in forward
+    return_dict=return_dict,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 592, in forward
+    output_attentions,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 514, in forward
+    self.feed_forward_chunk, self.chunk_size_feed_forward, self.seq_len_dim, attention_output
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/modeling_utils.py", line 2472, in apply_chunking_to_forward
+    return forward_fn(*input_tensors)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 526, in feed_forward_chunk
+    layer_output = self.output(intermediate_output, attention_output)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 441, in forward
+    hidden_states = self.LayerNorm(hidden_states + input_tensor)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/normalization.py", line 190, in forward
+    input, self.normalized_shape, self.weight, self.bias, self.eps)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/functional.py", line 2347, in layer_norm
+    return torch.layer_norm(input, normalized_shape, weight, bias, eps, torch.backends.cudnn.enabled)
+RuntimeError: CUDA out of memory. Tried to allocate 24.00 MiB (GPU 0; 5.93 GiB total capacity; 4.68 GiB already allocated; 38.31 MiB free; 4.73 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+
+./bert_logs/max_tokens=128_batch_size=64_pretrained_model=bert-base-uncased.log results
+Traceback (most recent call last):
+  File "bert_approach.py", line 336, in <module>
+    main()
+  File "bert_approach.py", line 297, in main
+    wrapper.fit(train_instances, train_labels, val_instances, val_labels)
+  File "bert_approach.py", line 145, in fit
+    labels=labels)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 1554, in forward
+    return_dict=return_dict,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 1006, in forward
+    return_dict=return_dict,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 592, in forward
+    output_attentions,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 514, in forward
+    self.feed_forward_chunk, self.chunk_size_feed_forward, self.seq_len_dim, attention_output
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/modeling_utils.py", line 2472, in apply_chunking_to_forward
+    return forward_fn(*input_tensors)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 525, in feed_forward_chunk
+    intermediate_output = self.intermediate(attention_output)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 426, in forward
+    hidden_states = self.dense(hidden_states)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/linear.py", line 103, in forward
+    return F.linear(input, self.weight, self.bias)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/functional.py", line 1848, in linear
+    return torch._C._nn.linear(input, weight, bias)
+RuntimeError: CUDA out of memory. Tried to allocate 192.00 MiB (GPU 0; 5.93 GiB total capacity; 4.54 GiB already allocated; 182.81 MiB free; 4.59 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+
+./bert_logs/max_tokens=256_batch_size=64_pretrained_model=bert-base-uncased.log results
+Traceback (most recent call last):
+  File "bert_approach.py", line 336, in <module>
+    main()
+  File "bert_approach.py", line 297, in main
+    wrapper.fit(train_instances, train_labels, val_instances, val_labels)
+  File "bert_approach.py", line 145, in fit
+    labels=labels)
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 1554, in forward
+    return_dict=return_dict,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 1006, in forward
+    return_dict=return_dict,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 592, in forward
+    output_attentions,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 477, in forward
+    past_key_value=self_attn_past_key_value,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 409, in forward
+    output_attentions,
+  File "/home/manosl/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/manosl/.local/lib/python3.6/site-packages/transformers/models/bert/modeling_bert.py", line 306, in forward
+    attention_scores = torch.matmul(query_layer, key_layer.transpose(-1, -2))
+RuntimeError: CUDA out of memory. Tried to allocate 768.00 MiB (GPU 0; 5.93 GiB total capacity; 4.07 GiB already allocated; 662.06 MiB free; 4.12 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+

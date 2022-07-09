@@ -1,0 +1,18 @@
+Read /train/neg
+Read /train/pos
+Read /test/neg
+Read /test/pos
+Train instance num: 25000
+Epoch 0 Train Loss(Normalized): 0.3819369498761853 Validation Loss(Normalized): 0.3824217594740793
+Epoch 1 Train Loss(Normalized): 0.30784880229279693 Validation Loss(Normalized): 0.39562853469091763
+Epoch 2 Train Loss(Normalized): 0.26858442695126156 Validation Loss(Normalized): 0.4090596246949928
+Epoch 3 Train Loss(Normalized): 0.23959082125144476 Validation Loss(Normalized): 0.4292084214151325
+Epoch 4 Train Loss(Normalized): 0.22911069617187813 Validation Loss(Normalized): 0.430411925146361
+Accuracy on Train Set: 0.88164
+F1 on Train Set: 0.8826305977549481
+Accuracy on Test Set: 0.8429866666666667
+F1 on Test Set: 0.8447093575271652
+[[7799 1576]
+ [1368 8007]]
+
+[0, 0, 1, 1, 0]

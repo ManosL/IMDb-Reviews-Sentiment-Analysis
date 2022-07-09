@@ -1,0 +1,23 @@
+Train Accuracies
+                 Naive Bayes  SVM with C=1.0  SVM with C=10.0  SVM with C=50.0
+Tf-Idf               0.80324         0.90884          0.98740          0.99960
+CountVectorizer      0.75196         0.90720          0.96180          0.98932
+Word2Vec             0.75404         0.91108          0.98168          0.99924
+
+Test Accuracies
+                 Naive Bayes  SVM with C=1.0  SVM with C=10.0  SVM with C=50.0
+Tf-Idf               0.78756         0.83360          0.80132          0.78508
+CountVectorizer      0.68404         0.85200          0.83996          0.81444
+Word2Vec             0.74668         0.86604          0.84856          0.82908
+
+Train F1-Scores
+                 Naive Bayes  SVM with C=1.0  SVM with C=10.0  SVM with C=50.0
+Tf-Idf              0.802933        0.909689         0.987441         0.999600
+CountVectorizer     0.711219        0.908293         0.962026         0.989343
+Word2Vec            0.745688        0.911677         0.981626         0.999240
+
+Test F1-Scores
+                 Naive Bayes  SVM with C=1.0  SVM with C=10.0  SVM with C=50.0
+Tf-Idf              0.783392        0.834803         0.801819         0.784882
+CountVectorizer     0.614438        0.853894         0.841161         0.815216
+Word2Vec            0.735718        0.866131         0.846894         0.827067
